@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Корзина">
+  <title>Корзина</title>
+  <link rel="stylesheet" href="C:\Users\kopos\OneDrive\Desktop\main_project\card_for_good.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="C:\Users\kopos\OneDrive\Desktop\main_project\img\logo.svg" width="60%">
+    </div>
+        <form class="search" onsubmit="return false">
+      <input type="text" placeholder="Поиск..."/>
+      <button type="submit">Найти</button>
+  </header>
+  <div class="filter-bar">
+    <div class="dropdown" style="--btn-bg:#ffffff; --btn-color:#00000">
+      <button class="dropbtn" aria-expanded="false">Бренд ▼</button>
+      <div class="dropdown-content" role="menu">
+        <a href="#" data-value="Puma" role="menuitem">Puma</a>
+        <a href="#" data-value="Adidas" role="menuitem">Adidas</a>
+        <a href="#" data-value="Nike" role="menuitem">Nike</a>
+        <a href="#" data-value="Asics" role="menuitem">Asics</a>
+        <a href="#" data-value="Saucony" role="menuitem">Saucony</a>
+        <a href="#" data-value="Mizuno" role="menuitem">Mizuno</a>
+      </div>
+    </div>
+  </div>
+   <main class="cart-container">
+    <h1>Ваша корзина</h1>
+    <div id="cartItems"></div>
+    <div class="cart-total" id="cartTotal"></div>
+    <button class="order-btn" id="checkoutBtn">Оформить заказ</button>
+  </main>
+  <script src="C:\Users\kopos\OneDrive\Desktop\main_project\js_for_brands.js"></script>
+   <script src="C:\Users\kopos\OneDrive\Desktop\main_project\js_for_searching.js"></script>
+   <script src="C:\Users\kopos\OneDrive\Desktop\main_project\cart_display.js"></script>
+</body>
+</html>

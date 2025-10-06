@@ -1,0 +1,132 @@
+:root {
+  --accent: #efefef;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+header {
+  background: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.logo {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.search input {
+  border: none;
+  background: transparent;
+  color: #0c0c0c;
+  padding: 0.6rem 1rem;
+  outline: none;
+  width: 190%;
+}
+.search button {
+  border: none;
+  background: var(--accent);
+  background-color: #00000076;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+nav {
+  background: rgb(0, 0, 0);
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  transition: .3s;
+}
+nav a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+main {
+  flex: 1;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  background: url(http://s3.nikecdn.com/pass/NikeBasketball/LeBron_Poster.jpg) center center no-repeat;
+    -webkit-background-size: 250%;
+    -moz-background-size: 250%;
+    -o-background-size: 250%;
+    background-size: 250%;
+    -webkit-box-shadow: 0 -50px 20px -20px #232323 inset;
+    -moz-box-shadow: 0 -50px 20px -20px #232323 inset;
+    box-shadow: 0 -50px 20px -20px #232323 inset;
+}
+
+main h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,.6);
+}
+main p {
+  font-size: 1.2rem;
+  font-weight: 800;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.989);
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search input {
+    width: 100%;
+  }
+}
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cart-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.cart-link:hover {
+  color: var(--accent);
+}
